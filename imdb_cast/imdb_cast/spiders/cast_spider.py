@@ -17,7 +17,7 @@ class CastSpider(scrapy.Spider):
 
     def parseCast(self, response):
         # SCRAPE CAST MEMBERS FROM EACH CAST LIST
-        cast_list = response.css("div#titleCast.article td a::text").extract()     
+        cast_list = response.css("td.primary_photo a img::attr(title)").extract()     
         for member in cast_list:
             cast = ImdbCastItem()
             cast['name'] = str(member).strip()
