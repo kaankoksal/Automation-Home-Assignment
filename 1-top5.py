@@ -24,9 +24,9 @@ for i in five_highest:
     top5_cast_members.append(i[0])
 
 # Open the upload file and write the list content 
-upload_file = open('drive_upload/to_upload.csv','w')
+upload_file = open('upload/to_upload.csv','w')
 writer = csv.writer(upload_file, dialect='excel')
 
 for cast_member in top5_cast_members:
     writer.writerow([cast_member])
-print("File write successful")
+print(f"Top 5 cast members are: {top5_cast_members}\n...\nWriting into drive upload file now")
