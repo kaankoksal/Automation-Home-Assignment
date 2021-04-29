@@ -30,8 +30,8 @@ function automateForm() {
   
     MailApp.sendEmail({
       to: recipients,
-      subject: "form test",
-      body: "Form URL is " + formURL
+      subject: "Top 5 Cast Members Form",
+      body: "The form where you can select your favorite actors/actresses is ready! Form URL is " + formURL
     });
   
   }
