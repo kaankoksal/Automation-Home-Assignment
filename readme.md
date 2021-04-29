@@ -35,8 +35,10 @@ To activate (given that you are in the project directory);
 pip install scrapy
 pip install pandas
 ```
-
-
+Finally, Google client library must be installed
+```
+  pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+```
 ### Apps Script Part
 
 This project uses Drive API. Therefore another requirement is to create a project in Google Cloud Platform 
